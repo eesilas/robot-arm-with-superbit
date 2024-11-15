@@ -28,9 +28,9 @@ basic.forever(function () {
         if (huskylens.isLearned(1)) {
             x = huskylens.readeBox(1, Content1.xCenter)
             y = huskylens.readeBox(1, Content1.yCenter)
-            mapx = Math.map(x, 0, 319, 0, 165)
-            SuperBit.Servo(SuperBit.enServo.S2, Math.abs(165 - x))
-            SuperBit.Servo(SuperBit.enServo.S1, Math.map(y, 0, 210, 70, 160))
+            mapx = Math.map(x, -160, 160, 0, 80)
+            SuperBit.Servo(SuperBit.enServo.S2, 80 - x)
+            SuperBit.Servo(SuperBit.enServo.S1, Math.map(y, 0, 210, 95, 160))
         }
     }
 })
