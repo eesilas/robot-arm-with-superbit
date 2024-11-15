@@ -21,11 +21,11 @@ huskylens.initMode(protocolAlgorithm.ALGORITHM_OBJECT_TRACKING)
 radio.setGroup(137)
 basic.forever(function () {
     if (aa == 1) {
-        for (let index = 0; index <= 120; index++) {
+        for (let index = 0; index <= 140; index++) {
             SuperBit.Servo(SuperBit.enServo.S1, index)
             basic.pause(200)
         }
-        for (let index = 0; index <= 120; index++) {
+        for (let index = 0; index <= 140; index++) {
             SuperBit.Servo(SuperBit.enServo.S2, index)
             basic.pause(200)
         }
